@@ -1,0 +1,25 @@
+# Configuration file for the QuantaSensa Parent Controller
+
+# --- Agent Settings ---
+# Path to the Python agent script.
+agent_path: "src/agent.py"
+
+# --- Logging Settings ---
+# Path to the parent controller's log file.
+log_file: "parent.log"
+# Log level: Can be ERROR, INFO, or DEBUG.
+log_level: "DEBUG"
+
+# --- Scheduling Settings ---
+# The agent will only run during these time windows.
+# Each window is defined by a start and end hour (24-hour format, inclusive).
+# You can have multiple windows.
+schedule:
+  - start_hour: 22 # 10 PM
+    end_hour: 23   # 11 PM
+  - start_hour: 0  # Midnight
+    end_hour: 6    # 6 AM
+
+# --- Controller Settings ---
+# The number of seconds to wait for an ESC key press after the agent finishes.
+post_action_wait_seconds: 15
