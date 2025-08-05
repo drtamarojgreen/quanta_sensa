@@ -42,7 +42,7 @@ The Python agent performs the actual tasks. It is designed to be a single-action
         -   `shell_command`: execute a shell command.
         -   `self_update`: update the agent's own code.
 - **[ ] LLM Integration:**
-    -   [ ] Integrate with a local LLM (like `llama.cpp`) to enable natural language understanding. The agent should be able to parse a command like "create a note about my new idea" and translate it into a specific action.
+    -   [ ] Integrate with a local LLM to enable natural language understanding. The agent should be able to parse a command like "create a note about my new idea" and translate it into a specific action.
 - **[ ] Learning Module:**
     -   [ ] Implement a module that allows the agent to learn from local resources, such as `man` pages. This could involve parsing `man` pages to understand how to use new commands.
 - **[ ] Security:**
