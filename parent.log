@@ -1,0 +1,7 @@
+[2025-08-06 01:38:53] [INFO] Parent controller started. Polling for scripts... Press ESC to exit.
+[2025-08-06 01:38:53] [INFO] Found script: task-123.sh
+[2025-08-06 01:38:53] [INFO] Moved script to actions/in_progress/task-123.sh
+[2025-08-06 01:38:53] [INFO] Validating script with QuantaEthos...
+[2025-08-06 01:38:53] [INFO] QuantaEthos validation successful.
+[2025-08-06 01:38:53] [INFO] Executing script: actions/in_progress/task-123.sh
+[2025-08-06 01:38:53] [INFO] Script executed successfully: task-123.sh
