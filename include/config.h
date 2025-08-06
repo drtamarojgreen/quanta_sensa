@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include "logger.h" // Include logger.h for the LogLevel enum
 
 // Defines the structure for a single time window for the agent to run.
 struct TimeWindow {
@@ -13,7 +14,7 @@ struct TimeWindow {
 // Main configuration structure for the application.
 struct AppConfig {
     std::string agent_path;
-    std.string log_file;
+    std::string log_file;
     LogLevel log_level;
     std::vector<TimeWindow> schedule;
     int post_action_wait_seconds;

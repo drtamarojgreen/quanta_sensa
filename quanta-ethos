@@ -1,0 +1,17 @@
+#!/bin/bash
+# Mock QuantaEthos Validator
+
+# Default to approve
+DECISION="approve"
+REASON="Mock validation: action is approved."
+TRUST_SCORE=0.9
+
+# A simple heuristic to deny a dangerous command for demonstration
+if [[ "$1" == *"rm -rf"* ]]; then
+  DECISION="deny"
+  REASON="High-risk command 'rm -rf' detected."
+  TRUST_SCORE=0.1
+fi
+
+# Print the JSON response to stdout
+echo "{\"decision\": \"$DECISION\", \"reason\": \"$REASON\", \"trust_score\": $TRUST_SCORE}"
