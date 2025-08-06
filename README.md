@@ -34,6 +34,22 @@ The framework is designed for scenarios where security and stability are paramou
 
 ---
 
+## 🔮 Future Vision: The PrismQuanta Ecosystem
+
+While QuantaSensa forms the core execution agent, it is part of a broader, more ambitious vision for a cohesive, autonomous system called the **PrismQuanta Ecosystem**. This future architecture aims to unify several specialized components into a self-managing and self-improving whole.
+
+The high-level goals for the ecosystem include:
+- **Strategic Task Management (`QuantaLista`):** A high-level component for managing goals and breaking them down into actionable tasks.
+- **Tactical Control (`QuantaPorto`):** A controller that translates tasks into a structured language for the agent.
+- **Ethical Governance (`QuantaEthos`):** A mandatory, non-bypassable service to validate all significant actions against a set of ethical rules.
+- **Knowledge Management (`QuantaGlia`):** A "librarian" agent that analyzes repository activity to identify areas for improvement and autonomously create new tasks.
+
+This integrated system is designed to be highly modular, resilient, and operate entirely offline. Communication between components is managed through a simple, file-based queue system to ensure robustness.
+
+For a detailed breakdown of this vision, including the phased roadmap and technical architecture, please see the full **[PrismQuanta Integration Plan](docs/plan.md)**.
+
+---
+
 ## 🧠 Core Concepts
 
 - **Autonomous Self-Improvement:** The agent is designed to incrementally build and refine its capabilities. It learns from its actions and the environment, using local resources like `man` pages to understand and utilize new commands. This process is gradual and controlled, ensuring that the agent's development does not compromise system stability.
