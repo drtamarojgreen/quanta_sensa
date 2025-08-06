@@ -9,6 +9,7 @@
 - [Overview](#overview)
 - [Core Concepts](#core-concepts)
 - [Architecture](#architecture)
+- [Ecosystem Architecture](#ecosystem-architecture)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -81,6 +82,22 @@ The Python agent is the "brains" of the operation. It is designed to be lightwei
 - **Intent Parsing:** Uses a local large language model to understand commands and determine the appropriate action to take.
 - **Learning:** Reads and indexes local `man` pages to learn how to use new commands and expand its capabilities.
 - **Logging:** Maintains a detailed log of its activities, which is essential for understanding its behavior and for debugging.
+
+---
+
+## 🏛️ Ecosystem Architecture
+
+While `QuantaSensa` is the core execution agent, it is designed to be part of a larger, multi-component **PrismQuanta Ecosystem**. This ecosystem is a cohesive, autonomous system built on a philosophy of local-first operation, modularity, and ethical governance.
+
+### Core Components
+
+-   **QuantaLista (Strategist):** Manages the master project plan, breaking down high-level goals into a queue of tasks.
+-   **QuantaPorto (Commander):** Translates tasks from `QuantaLista` into a structured language (PQL) and schedules them for execution.
+-   **QuantaSensa (Field Agent):** The hands of the system, responsible for executing a single scheduled task resiliently.
+-   **QuantaGlia (Librarian):** The knowledge manager, responsible for analyzing repositories and logs to spawn new improvement tasks.
+-   **QuantaEthos (Conscience):** A mandatory validation service that provides a go/no-go decision for any potentially impactful command.
+
+This architecture allows for a clear separation of concerns, from high-level strategy to low-level execution. For a complete overview of the integration strategy, communication protocols, and the phased roadmap, please see the full **[Ecosystem Integration Plan](./docs/integration_plan.md)**.
 
 ---
 

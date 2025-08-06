@@ -1,3 +1,5 @@
+> **Note:** This document outlines the implementation plan for the `QuantaSensa` component. For the comprehensive plan covering the entire PrismQuanta ecosystem, please see the [Ecosystem Integration Plan](./integration_plan.md).
+
 # QuantaSensa Implementation Plan
 
 ## 1. Overview
