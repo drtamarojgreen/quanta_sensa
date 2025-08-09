@@ -6,7 +6,7 @@ This document outlines a detailed implementation plan for the QuantaSensa framew
 
 ## 2. Core Components
 
-### 2.1. C++ Parent Controller (`main.cpp`)
+### 2.1. C++ Parent Controller (`parent_controller.cpp`)
 
 The parent controller is the entry point of the application. It is responsible for scheduling, launching, and monitoring the Python agent.
 
