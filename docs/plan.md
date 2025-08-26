@@ -18,6 +18,9 @@ The parent controller is the entry point of the application. It is responsible f
         -   Allowed time window
         -   Post-action wait time
         -   Log file path and level
+- **[ ] File System Event Monitoring:**
+    -   [ ] Implement a service to monitor file system events (creations, modifications, deletions) in key directories.
+    -   [ ] Create a mechanism for other components to subscribe to and react to these events.
 - **[ ] Scheduling:**
     -   [ ] Refine the `is_in_time_window()` function to be more flexible (e.g., support multiple time windows, weekdays/weekends).
 - **[ ] Agent Launching:**
