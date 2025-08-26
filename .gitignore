@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled binaries
+parent_controller
+tests/unit/test_file_watcher
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+
+# Debugging artifacts
+agent_stderr.log
+agent.heartbeat
+agent_env.log
+agent_manual_start.txt
+agent_started.txt
+controller_stdout.log

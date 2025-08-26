@@ -4,10 +4,10 @@ This document lists 20 possible enhancements for the QuantaSensa framework, incl
 
 ---
 
-### 1. Dynamic Configuration Loading
+### 1. File System Event Monitoring
 
--   **Approach:** Implement a file watcher in the C++ controller to detect changes in a configuration file (e.g., `config.yaml`) and reload settings without restarting.
--   **Challenges:** Ensuring thread-safe updates to configuration variables and handling malformed configuration files gracefully.
+-   **Approach:** Implement a generic file system event monitoring service in the C++ controller. This service would use a platform-specific API (`inotify` on Linux, `FSEvents` on macOS, `ReadDirectoryChangesW` on Windows) to watch for file creation, deletion, and modification events in specified directories. Event notifications could be pushed to a queue for other components to consume, allowing for flexible responses like logging, task triggering, or state updates.
+-   **Challenges:** Efficiently monitoring a large number of directories, handling platform-specific API differences, and designing a robust event filtering and subscription mechanism to avoid performance bottlenecks.
 
 ### 2. Advanced Scheduling System
 
