@@ -1,0 +1,9 @@
+Situation: Discovery
+Is os_name = Linux
+Is kernel_major = 6
+Is kernel_minor = 8
+Is compiler_version_major = 13
+Is compiler_version_minor = 3
+Is python_version_major = 3
+Is python_version_minor = 12
+Results discovery_fidelity_score = 7
